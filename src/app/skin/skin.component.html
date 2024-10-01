@@ -1,0 +1,194 @@
+<!-- camera.component.html -->
+
+<div class="wrapper">
+  <div class="center-line">
+    <a href="#" class="scroll-icon"><i class="fas fa-caret-up"></i></a>
+  </div>
+  <div class="row row-1">
+    <section>
+      <i class="icon fa-duotone fa-check"></i>
+      <div class="details">
+        <span class="title">step 1:</span>
+        <span>Input Image</span>
+      </div>
+      <p>Provide the system with an image or video containing skin regions that you want to detect. This can be done through an interface where you upload an image or stream video from a camera.</p>
+      <div class="bottom">
+        <a href="#">Read more</a>
+        <i></i>
+      </div>
+    </section>
+  </div>
+  <div class="row row-2">
+    <section>
+      <i class="icon fas fa-star"></i>
+      <div class="details">
+        <span class="title">step 2:</span>
+        <span>Initiate Detection</span>
+      </div>
+      <p>Start the skin detection process by pressing a button or selecting an option in the user interface. This action triggers the system to analyze the provided image or video frame by frame.</p>
+      <div class="bottom">
+        <a href="#">Read more</a>
+        <i></i>
+      </div>
+    </section>
+  </div>
+  <div class="row row-1">
+    <section>
+      <i class="icon fas fa-rocket"></i>
+      <div class="details">
+        <span class="title">step 3:</span>
+        <span>Fill Out Form</span>
+      </div>
+      
+      <p>While the system processes the image or video, you may be prompted to fill out a form containing questions related to the detected skin regions. The form may ask about the purpose of detection, any specific areas of interest, or additional details for analysis</p>
+      <div class="bottom">
+        <a href="#">Read more</a>
+        <i></i>
+      </div>
+    </section>
+  </div>
+  <div class="row row-2">
+    <section>
+      <i class="icon fas fa-globe"></i>
+      <div class="details">
+        <span class="title">step 4:</span>
+        <span>View Results</span>
+      </div>
+      <p>Once the analysis is complete, view the results displayed on the interface. The system will highlight detected skin regions in the input image or video, making it easy for you to identify them.</p>
+      <div class="bottom">
+        <a href="#">Read more</a>
+        <i></i>
+      </div>
+    </section>
+  </div>
+  <div class="row row-1">
+    <section>
+      <i class="icon fas fa-paper-plane"></i>
+      <div class="details">
+        <span class="title">step 5</span>
+        <span>Purchase Required Medicine from medical store</span>
+      </div>
+      <p> If the analysis indicates a potential medical condition, you may have the option to purchase required medicine directly from a medical store integrated into the website. The system can provide recommendations based on the detected condition, and you can add the recommended medicine to your cart for purchase.</p>
+      <div class="bottom">
+        <a routerLink="store">buy Medicine</a>
+        <i></i>
+      </div>
+    </section>
+  </div>
+  <div class="row row-2">
+    <section>
+      <i class="icon fas fa-map-marker-alt"></i>
+      <div class="details">
+        <span class="title">step 6:</span>
+        <span>Review and Validate</span>
+      </div>
+      <p>Take a moment to review the detected skin regions and ensure they align with your expectations. If needed, you can provide feedback or refine the input to enhance the detection outcome.</p>
+      <div class="bottom">
+        <a href="#">give feedback</a>
+        <i></i>
+      </div>
+    </section>
+  </div>
+</div>
+
+
+  
+  
+  <a href="http://127.0.0.1:5000"><button class="capture-photo-btn" >start skin disease detection...</button></a>
+
+  <!-- app.component.html -->
+<form class="personal-info-form" #personalInfoForm="ngForm" (ngSubmit)="submit(personalInfoForm.value)">
+  <p class="success-message">{{addProductMessage}}</p>
+
+  <h2>Personal Information</h2>
+  <div class="form-group">
+    <label for="fullName">Full Name</label>
+    <input type="text" id="fullName" placeholder="enter name of patient" name="fullName" ngModel required>
+  </div>
+  <div class="form-group">
+    <label for="dob">Date of Birth</label>
+    <input type="date" id="dob" name="dob" ngModel required>
+  </div>
+  <div class="form-group">
+    <label for="gender">Gender</label>
+    <select id="gender" name="gender" ngModel required>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="age">age</label>
+    <input type="age" id="age" placeholder="enter age" name="age" ngModel required>
+  </div>
+  <div class="form-group">
+    <label for="fullName">country of origin</label>
+    <input type="text" id="fullName" placeholder="enter name of country" name="country" ngModel required>
+  </div>
+  <div class="form-group">
+    <label for="address">Address</label>
+    <textarea id="address" name="address" placeholder="enter permanent address" ngModel required></textarea>
+  </div>
+  <div class="form-group">
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" placeholder="enter phone number" ngModel required>
+  </div>
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="enter email address" ngModel required>
+  </div>
+  <div class="form-group">
+    <label for="area">skin impacted area</label>
+    <input type="text" id="impact" name="impact" placeholder="enter information about impacted area" ngModel required>
+  </div>
+  <!-- Medical History -->
+  <h2>Medical History</h2>
+  <div class="form-group">
+    <label for="preExistingConditions">Pre-existing Medical Conditions</label>
+    <textarea id="preExistingConditions" name="preExistingConditions" ngModel></textarea>
+  </div>
+  <div class="form-group">
+    <label for="previousSurgeries">Previous Surgeries or Hospitalizations</label>
+    <textarea id="previousSurgeries" name="previousSurgeries" ngModel></textarea>
+  </div>
+  <div class="form-group">
+    <label for="currentMedications">Current Medications</label>
+    <textarea id="currentMedications" name="currentMedications" ngModel></textarea>
+  </div>
+  <!-- Add more fields for other medical history information as needed -->
+  
+  <!-- Health Insurance History -->
+  <h2>Health Insurance History</h2>
+  <div class="form-group">
+    <label for="existingCoverage">Existing Health Insurance Coverage</label>
+    <textarea id="existingCoverage" name="existingCoverage" ngModel></textarea>
+  </div>
+  <div class="form-group">
+    <label for="previousPolicyNumbers">Previous Insurance Policy Numbers</label>
+    <input type="text" id="previousPolicyNumbers" name="previousPolicyNumbers" ngModel>
+  </div>
+  <div class="form-group">
+    <label for="cancer">any skin cancer?</label>
+    <select id="cancer" name="cancer" ngModel required>
+      <option value="yes">yes</option>
+      <option value="no">no</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="bleeding">any where bleeding ?</label>
+    <select id="bleeding" name="bleeding" ngModel required>
+      <option value="yes">yes</option>
+      <option value="no">no</option>
+    </select>
+  </div>
+  <div class="from-group">
+  <h2>upload skin image</h2>
+
+  <!-- Personal Information -->
+  <input id="file-upload" type="file" name="image" accept=".jpg, .jpeg, .png"></div>
+  <br>
+
+  <button type="submit">Submit</button>
+  <p class="success-message">{{addProductMessage}}</p>
+
+</form>

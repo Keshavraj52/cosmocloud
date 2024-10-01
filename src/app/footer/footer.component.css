@@ -1,0 +1,79 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Footer Styles */
+  .ecommerce-footer {
+    background-color: #189df5;
+    color: #fff;
+    padding: 40px 0;
+    margin-top: 900px;
+    display: block;
+    margin-bottom: 0px;
+    width: 100vw;
+  }
+  
+  .ecommerce-footer h4 {
+    color: #000000;
+  }
+  
+  .ecommerce-footer p {
+    font-size: 14px;
+  }
+  
+  .ecommerce-footer a {
+    color: #ffcc00;
+    text-decoration: none;
+  }
+  
+  .ecommerce-footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .ecommerce-footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .ecommerce-footer ul li {
+    margin-bottom: 10px;
+  }
+  
+  .social-icons {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 0px;
+  }
+  
+  .social-icons i {
+    font-size: 24px;
+    color: #ffcc00;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 767px) {
+    .ecommerce-footer {
+      text-align: center;
+    }
+  }
+  .logo {
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    width: 45px;
+    height: 40px;
+    color: #3498db; /* Blue color, feel free to choose your own */
+    text-transform: uppercase;
+  }
+  
+  .logo:hover {
+    color: #ff6347; /* Change color on hover, this is a coral shade */
+  }
+  
+  

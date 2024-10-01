@@ -1,0 +1,13 @@
+<!-- src/app/upload/upload.component.html -->
+
+<input type="file" (change)="onFileSelected($event)">
+<button (click)="onUpload()">Upload</button>
+
+<div *ngIf="resultImage">
+  <img [src]="resultImage">
+</div>
+
+<div *ngIf="distance">
+  <p>Distance: {{ distance }}</p>
+</div>
+

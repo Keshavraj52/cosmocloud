@@ -1,0 +1,33 @@
+h1{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+
+.update-product{
+    text-align: center;
+    border: 2px solid greenyellow;
+    margin-left: 35vw;
+    margin-right: 20vw;
+    margin-top: 55px;
+    border-radius: 10px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.update-product:hover{
+    background: #59bb1865;
+}
+.success-message {
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* White text color */
+    padding: 15px; /* Padding around the text */
+    text-align: center; /* Center-align the text */
+    font-size: 18px; /* Font size of the text */
+    font-family: Arial, sans-serif; /* Font family */
+    border-radius: 5px; /* Rounded corners */
+    align-items: center;
+    
+    width: 360px;
+
+}

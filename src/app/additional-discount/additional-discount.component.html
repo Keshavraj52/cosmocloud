@@ -1,0 +1,20 @@
+<div class="discount">
+    <div class="product-list-wrapper">
+        <h1>additional discounted medicine<span class="new">New</span></h1>
+        <div class="row treandy">
+            <div class="col-sm-3" *ngFor="let item of discounted">
+                <div class="product-item">
+                    <a routerLink="/details/{{item.id}}"> <img src="{{item.image}}" alt=""></a>
+                    <div class="product-details">
+                          <h6 class="product-head">{{item.name}}</h6>
+                        
+                        
+                            <h3>order now {{item.additionaldiscount}}%  OFF</h3>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>

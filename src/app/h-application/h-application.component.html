@@ -1,0 +1,114 @@
+<!-- app.component.html -->
+<form class="personal-info-form" #personalInfoForm="ngForm" (ngSubmit)="submit(personalInfoForm.value)">
+    <!-- Personal Information -->
+    <h2>Personal Information</h2>
+    <div class="form-group">
+      <label for="fullName">Full Name</label>
+      <input type="text" id="fullName" placeholder="enter full name as per adhar card" name="fullName" ngModel required>
+    </div>
+    <div class="form-group">
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" name="dob" ngModel required>
+    </div>
+    <div class="form-group">
+      <label for="gender">Gender</label>
+      <select id="gender" name="gender" ngModel required>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="address">Address</label>
+      <textarea id="address" name="address" placeholder="enter permanent address" ngModel required></textarea>
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="enter phone number" ngModel required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="enter email address" ngModel required>
+    </div>
+  
+    <!-- Identification Documents -->
+    <h2>Identification Documents</h2>
+    <div class="form-group">
+      <label for="governmentID">Government ID</label>
+      <input type="text" id="governmentID" name="governmentID" placeholder="enter any government id number" ngModel required>
+    </div>
+  
+    <!-- Employment Information -->
+    <h2>Employment Information</h2>
+    <div class="form-group">
+      <label for="employerName">Employer's Name</label>
+      <input type="text" id="employerName" placeholder="enter name of doer man " name="employerName" ngModel>
+    </div>
+    <div class="form-group">
+      <label for="employmentStatus">Employment Status</label>
+      <select id="employmentStatus" name="employmentStatus" ngModel>
+        <option value="full-time">Full-time</option>
+        <option value="part-time">Part-time</option>
+        <option value="self-employed">Self-employed</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="proofOfIncome">Proof of Income</label>
+      <input type="file" id="proofOfIncome" name="proofOfIncome" ngModel>
+    </div>
+  
+    <!-- Dependent Information -->
+    <h2>Dependent Information</h2>
+    <div class="form-group">
+      <label for="dependentName">Dependent's Name</label>
+      <input type="text" id="dependentName" placeholder="enter dependent name" name="dependentName" ngModel>
+    </div>
+    <div class="form-group">
+      <label for="dependentDOB">Dependent's Date of Birth</label>
+      <input type="date" id="dependentDOB" name="dependentDOB" ngModel>
+    </div>
+    <!-- Add more fields for other dependent information as needed -->
+    
+    <!-- Medical History -->
+    <h2>Medical History</h2>
+    <div class="form-group">
+      <label for="preExistingConditions">Pre-existing Medical Conditions</label>
+      <textarea id="preExistingConditions" name="preExistingConditions" ngModel></textarea>
+    </div>
+    <div class="form-group">
+      <label for="previousSurgeries">Previous Surgeries or Hospitalizations</label>
+      <textarea id="previousSurgeries" name="previousSurgeries" ngModel></textarea>
+    </div>
+    <div class="form-group">
+      <label for="currentMedications">Current Medications</label>
+      <textarea id="currentMedications" name="currentMedications" ngModel></textarea>
+    </div>
+    <!-- Add more fields for other medical history information as needed -->
+    
+    <!-- Health Insurance History -->
+    <h2>Health Insurance History</h2>
+    <div class="form-group">
+      <label for="existingCoverage">Existing Health Insurance Coverage</label>
+      <textarea id="existingCoverage" name="existingCoverage" ngModel></textarea>
+    </div>
+    <div class="form-group">
+      <label for="previousPolicyNumbers">Previous Insurance Policy Numbers</label>
+      <input type="text" id="previousPolicyNumbers" name="previousPolicyNumbers" ngModel>
+    </div>
+    <!-- Financial Information -->
+    <h2>Financial Information</h2>
+    <div class="form-group">
+      <label for="bankAccount">Bank Account <details></details></label>
+      <input type="text" id="ifsccode" placeholder="enter banks IFSC code" name="ifsccode" ngModel required>
+      <input type="text" id="bankAccount" placeholder="enter account number" name="bankAccount" ngModel required>
+      <input type="text" id="branch" name="branch" placeholder="enter branch name" ngModel required>
+
+    </div>
+    <div class="form-group">
+      <label for="income">Income Information</label>
+      <input type="text" id="income" placeholder="enter income" name="income" ngModel>
+    </div>
+  
+    <button type="submit">Submit</button>
+  </form>
+  

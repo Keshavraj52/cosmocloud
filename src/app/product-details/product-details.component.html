@@ -1,0 +1,59 @@
+<div class="row product-details" *ngIf="productdata">
+    <div class="col-sm-6" >
+        <ngb-carousel *ngIf="productdata">
+            <ng-template ngbSlide>
+                <div class="picsum-img-wrapper">
+                    <img src="{{productdata.image}}" alt="Random first slide" />
+                </div>
+                
+            </ng-template>
+            <ng-template ngbSlide>
+                <div class="picsum-img-wrapper">
+                    <img src="{{productdata.image2}}" alt="Random second slide" />
+                </div>
+               
+            </ng-template>           
+        </ngb-carousel>  
+       </div>
+    <div class="col-sm-6">
+        <div class="details">
+            <h1>{{productdata.name}}</h1>
+            <h3>price: {{productdata.price}} ₹</h3>
+            <div><h5 [style.backgroundColor]="productdata.color" class="product-color"></h5></div>
+            <h6>category: {{productdata.category}}</h6>
+            <h6>{{productdata.description}}</h6>
+           <h2> rateing: {{Finalrating}}</h2><ngb-rating class="rate" [max]="5" [rate]="Finalrating" [readonly]="true" ></ngb-rating><br><h2>review from user {{rateingcount}}</h2><br>
+            <button *ngIf="!removeCart" class="form-button" (click)="AddToCart()">add to cart</button>
+            <button *ngIf="removeCart" class="form-button" (click)="removeToCart(productdata.id)">remove from cart</button>
+            <button class="form-button" (click)="payNow()" >buy now</button>
+            <div class="quantity-group">
+                <button (click)="handleQuantity('min')">-</button>
+                <input type="text" value="{{productQuantity}}">
+                <button (click)="handleQuantity('plus')">+</button>
+            </div>
+            <ngb-rating class="rate" [max]="5" (click)="getrateing()" [formControl]="ratingcontrol"></ngb-rating>
+        </div>
+    </div>
+</div>   
+<div class="product-list-wrapper">
+	<h1>discount on other medicine </h1>
+	<div class="row treandy">
+		<div class="col-sm-3" *ngFor="let item of trendyProducts">
+			<div class="product-item">
+				<a routerLink="/productde/{{item.id}}"  ><a > <img src="{{item.image}}" alt=""></a></a>
+				<div class="product-details">
+				 	 <h6 class="product-head">{{item.name}}</h6>
+					<div class="product-price">
+						<h6>{{item.price}}₹</h6>
+					</div>
+				 
+					<div class="product-footer">
+                        <a   routerLink="/productde/{{item.id}}" class="cta-button"> Discover More</a>
+
+                                                          
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

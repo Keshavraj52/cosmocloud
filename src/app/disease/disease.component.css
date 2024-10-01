@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 50px;
+    padding: 0 20px;
+}
+
+.box {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: calc(25% - 20px); /* 25% of container width minus margin */
+    overflow: hidden;
+}
+
+.image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+/* Styles for the popup */
+.popup {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Styles for the container */
+.container {
+    position: relative;
+}
+
+/* Styles for the hover effect */
+.box:hover .popup {
+    display: block;
+    width: 300px;
+}
+
+/* Additional styles for positioning and design */
+.popup h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.popup p {
+    margin: 5px 0;
+    color: #666;
+}
+
+/* Rest of your existing styles */
+/* Ensure to adjust styles as needed for other elements */

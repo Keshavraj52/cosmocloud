@@ -1,0 +1,42 @@
+.container {
+    width: 80%;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  .webcam-video {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .open-webcam-btn, .capture-photo-btn {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .open-webcam-btn:hover, .capture-photo-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .captured-photo {
+    margin-top: 20px;
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  

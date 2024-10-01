@@ -1,0 +1,95 @@
+/* Styling for checkout page */
+.checkout-page {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-page h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.checkout-page .message-p {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.checkout-page .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkout-page .col-sm-7 {
+    width: 70%;
+}
+
+.checkout-page .col-sm-5 {
+    width: 28%;
+}
+
+.checkout-page .shiping-address {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-page h4 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.checkout-page .common-form {
+    margin-bottom: 20px;
+}
+
+.checkout-page .form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.checkout-page .form-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.checkout-page .form-button:hover {
+    background-color: #0056b3;
+}
+
+/* Animation */
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.checkout-page .col-sm-7 {
+    animation: slideInRight 0.5s ease;
+}
+
+.checkout-page .col-sm-5 {
+    animation: slideInRight 0.5s ease;
+    animation-delay: 0.2s;
+}

@@ -1,0 +1,34 @@
+.search-item{
+    margin: 25px auto;
+    width: 100vw;
+    border-top: 1px solid #ddd;
+    padding: 10px;
+}
+.search-item img{
+    width: 100%;
+    object-fit: contain;
+    height: 150px;
+}
+.search-item h6{
+    font-size:24px;
+    color: blueviolet;
+
+}
+.search-item p{
+    margin: 5px;
+}
+.search-item span{
+    margin-right: 10px;
+}
+.kesh{
+    text-decoration: none;
+    color: rgb(174, 247, 6);
+
+}
+.kesh h6{
+    color: rgb(174, 247, 6);
+ 
+}
+.kesh h6:hover{
+    color: rgb(6, 247, 106);
+}

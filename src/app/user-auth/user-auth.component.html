@@ -1,0 +1,28 @@
+<div class="bg-gray-100 w-full h-screen flex items-center justify-center" style="width: 100vw;">
+    <div *ngIf="!showLogin"  class="w-full mx-4 py-8 md:w-2/4 border-2 border-gray-200 bg-white p-4 rounded-xl flex flex-col gap-8 shadow-lg">
+    <h1 class="text-center text-4xl font-semibold text-gray-700">user signup</h1>
+        <form #userSignUp="ngForm" (ngSubmit)="signUp(userSignUp.value)" class="flex flex-col gap-4 w-full text-lg md:text-xl">
+        <input  class="p-3 rounded-lg bg-white focus:ring-2 focus:ring-green-600 ring-2 outline-none ring-gray-200" ngModel name="name" type="text" placeholder="enter your name">
+        <input  class="p-3 rounded-lg bg-white focus:ring-2 focus:ring-green-600 ring-2 outline-none ring-gray-200" ngModel name="email" type="text" placeholder="enter your email">
+        <input  class="p-3 rounded-lg bg-white focus:ring-2 focus:ring-green-600 ring-2 outline-none ring-gray-200" ngModel name="password" type="password" placeholder="enter password">
+        <input type="text"  class="p-3 rounded-lg bg-white focus:ring-2 focus:ring-green-600 ring-2 outline-none ring-gray-200" placeholder="enter your profile url" name="name" ngModel>
+        <button  class="bg-green-800 hover:bg-green-900 text-white p-3 rounded-lg mt-4 text-2xl">signup</button>
+        <p class="mx-2">Already Have Account? <a class="text-green-600 cursor-pointer" (click)="openLogin()">click here to login</a></p>
+    </form>
+    </div>
+    <div *ngIf="showLogin"  class="bg-gray-100 w-full h-screen flex items-center justify-center" style="width: 100vw;">
+        <div  class="w-full mx-4 py-8 md:w-2/4 border-2 border-gray-200 bg-white p-4 rounded-xl flex flex-col gap-8 shadow-lg">
+        <h1 class="text-center text-4xl font-semibold text-gray-700">user Login</h1>
+        <form #userLogin="ngForm" (ngSubmit)="login(userLogin.value)" class="flex flex-col gap-4 w-full text-lg md:text-xl">
+            <p class="error-p">{{authError}}</p>
+        <input  class="p-3 rounded-lg bg-white focus:ring-2 focus:ring-green-600 ring-2 outline-none ring-gray-200" #email="ngModel" required minlength="8" ngModel name="email" type="text" placeholder="enter your email">
+        <p class="invalid-input"><span *ngIf="email.invalid && email.touched">please enter valid email*</span></p>
+        <input  class="p-3 rounded-lg bg-white focus:ring-2 focus:ring-green-600 ring-2 outline-none ring-gray-200" ngModel name="password" type="password" #password="ngModel" required minlength="8" maxlength="20" placeholder="enter password">
+        <p class="invalid-input"><span *ngIf="password.invalid && password.touched">please enter valid password*</span></p>
+        <button class="bg-green-800 hover:bg-green-900 text-white p-3 rounded-lg mt-4 text-2xl" [disabled]="userLogin.invalid">login</button>
+        <p class="mx-2">Don't Have Account? <a class="text-green-600 cursor-pointer" (click)="openSignUp()">click here to signup.</a></p>
+    </form>
+    </div>
+
+    </div>
+</div>

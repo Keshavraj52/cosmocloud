@@ -1,0 +1,504 @@
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: black;
+  }
+  .styled-img {
+    width: 300px; /* Set the width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Box shadow */
+    transition: transform 0.3s ease; /* Smooth transition on hover */
+  }
+
+  /* Hover effect */
+  .styled-img:hover {
+    transform: scale(1.1); /* Scale up on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Enhanced box shadow on hover */
+  }
+
+  .container:nth-child(1) {
+    background-color: #FFDE80;
+    width: 40vw;
+   height: 52vh;
+    margin-left: 15vw;
+
+  }
+
+  .container:nth-child(2) {
+    background-color: #FEC192;
+    width: 40vw;
+    margin-left: 50vw;
+    height: 52vh;
+
+  }
+
+  .container:nth-child(3) {
+    background-color: #C9BBFF;
+    margin-left: 15vw;
+    width: 40vw;
+    height: 52vh;
+
+  }
+  .container:nth-child(4) {
+    background-color: #FFDE80;
+    width: 40vw;
+   height: 52vh;
+    margin-left: 50vw;
+
+  }
+  .container:nth-child(5) {
+    background-color: #FEC192;
+    margin-left: 15vw;
+    width: 40vw;
+    height: 52vh;
+  }
+  
+  .container:nth-child(6) {
+    background-color: #C9BBFF;
+    width: 40vw;
+    margin-left: 50vw;
+    height: 52vh;
+
+  }
+  .container:nth-child(7) {
+    background-color: #FFDE80;
+    width: 40vw;
+   height: 52vh;
+    margin-left: 15vw;
+
+  }
+  .container:nth-child(8) {
+    background-color: #FEC192;
+    width: 40vw;
+    margin-left: 50vw;
+    height: 52vh;
+
+  }
+  .container:nth-child(9) {
+    background-color: #C9BBFF;
+    width: 40vw;
+    margin-left: 15vw;
+    height: 52vh;
+
+  }
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+  .carou{
+    background-color: rgba(247, 243, 243, 0.74);
+    width: 100vw;
+    margin-top: 25px;
+    align-items: center;
+}
+.carou img{
+  margin-left: 30vw;
+
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container1 {
+width: 80vw;
+margin-left: 10vw;
+  padding: 20px;
+  background-color: #C9BBFF;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: slideIn 0.5s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.check-section {
+  margin-top: 30px;
+}
+
+.check-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #FEC192;
+  transition: background-color 0.3s ease;
+}
+
+.check-item:hover {
+  background-color: #FFDE80;
+}
+.check-item img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.check-item-content {
+  flex: 1;
+}
+
+.check-item h2 {
+  margin: 0;
+  color: #333;
+  font-size: 24px;
+}
+
+.check-item p {
+  margin: 5px 0;
+  color: #666;
+}
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.container2 {
+width: 100vw; 
+height: 50vh;
+ margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+  width: 100vw;
+  background: url('https://img.freepik.com/free-vector/watercolor-medical-background_52683-162148.jpg?w=996&t=st=1724275022~exp=1724275622~hmac=c86a29fd082955a5ea1db4f733efac3ae98201d3a53b1e417fbcf4ea13eb08e8') center/cover no-repeat;
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+header p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: #000000;
+}
+
+/* Button Styles */
+.btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* About Section Styles */
+.about {
+  padding: 100px 0;
+}
+
+.about h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about-item {
+  flex: 1;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.about-item img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+/* Apply Section Styles */
+.apply {
+  background-color: #f4f4f4;
+  padding: 100px 0;
+}
+
+.apply h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.apply form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.apply input,
+.apply button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.apply button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.apply button:hover {
+  background-color: #0056b3;
+}
+.hero {
+  background-image: url('https://t4.ftcdn.net/jpg/06/01/09/55/360_F_601095582_Vvb6hZzhZpe84yiFJqV5o6O85MkM86dW.jpg'); /* Replace 'hero-background.jpg' with your image */
+  background-size: cover;
+  background-position: center;
+  color: #000000;
+  text-align: center;
+  padding: 100px 0;
+  width: 100vw;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-content .highlight {
+  color: #FF5733; /* Change highlight color as needed */
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background: #FF5733; /* Change button color as needed */
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #FF814A; /* Change button hover color as needed */
+}
+.container4{
+  width: 100vw;
+  height: 50vh;
+}
+
+
+
+.animated-text{
+  font-size: 4vw;
+  font-weight: 600;
+ }
+ .animated-text span{
+  position: relative;
+ }
+ .animated-text span::before{
+  content: "Agri";
+  color: #FF5733;
+  animation: words 20s infinite;
+ }
+ .animated-text span ::after{
+  content: "";
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  background-color: #2f3542;
+  border-left: 2px solid rgb(0, 0, 0);
+  right: -8px;
+  animation: cursor .8s infinite, typing 20s steps(14);
+ }
+ @keyframes cursor{
+  to{
+    border-left: 2px solid #ff7f5000;
+  }
+ }
+ @keyframes words{
+  0%, 20%{
+    content: "Secure Your Future.";
+  }
+  21%, 40%{
+    content: "तुमचे भविष्य सुरक्षित करा.";
+  }
+  41%, 60%{
+    content: "  अपना भविष्य सुरक्षित करें.";
+  }
+  61%, 80%{
+    content: "Ensure Happiness";
+  }
+  81%, 100%{
+    content: "आनंदाची खात्री करा    ";
+  }
+  101%, 120%{
+    content: "ख़ुशी सुनिश्चित करें";
+  }
+  121%, 140%{
+    content: "Sustain Vitality";
+  }
+  141%, 160%{
+    content: " चैतन्य टिकवून ठेवा";
+  }
+ }
+ @keyframes typing{
+  10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+    width: 0;
+  }
+  5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
+    width: calc(100% + 8px);
+  }
+ }
+.lineup h1 { 
+font-size: 30px; font-weight: 600; color: rgb(34, 110, 34);  
+}
+.lineup {
+overflow: hidden;
+white-space: nowrap;
+letter-spacing: 0.15em;
+padding-top: 80px;
+animation: typing 3s steps(30) infinite;
+}
+@keyframes typing {
+from {
+  width: 0;
+}
+to {
+  width: 50%;
+}
+}
+
+
+.animated-text1{
+  font-size: 4vw;
+  font-weight: 600;
+ }
+ .animated-text1 span{
+  position: relative;
+ }
+ .animated-text1 span::before{
+  content: "Agri";
+  color: #FF5733;
+  animation: word 15s infinite;
+ }
+ .animated-text1 span ::after{
+  content: "";
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  background-color: #2f3542;
+  border-left: 2px solid rgb(0, 0, 0);
+  right: -8px;
+  animation: cursor .8s infinite, typing 20s steps(14);
+ }
+ @keyframes cursor{
+  to{
+    border-left: 2px solid #ff7f5000;
+  }
+ }
+ @keyframes word{
+  0%, 20%{
+    content: "Medical Store";
+  }
+  21%, 40%{
+    content: "मेडिकल स्टोअर";
+  }
+  41%, 60%{
+    content: "  Chemist Store";
+  }
+  61%, 80%{
+    content: "केमिस्ट स्टोर";
+  }
+  81%, 100%{
+    content: "Pharmacist's Store";
+  }
+  101%, 120%{
+    content: "फार्मासिस्ट की दुकान";
+  }
+  121%, 140%{
+    content: "वेलनेस स्टोअर";
+  }
+  141%, 160%{
+    content: " Wellness Store";
+  }
+ }
+ .chatbot-button {
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #0095ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  
+  margin-top: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.chatbot-button:hover {
+  background-color: #006bb3;
+}

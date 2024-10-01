@@ -1,0 +1,75 @@
+<nav class="nav">
+    <a routerLink="/"><img class="farmmer" src="../../assets/Blue Red White Square Badge Simple Medical Clinic Logo.png" ></a>
+    <div *ngIf="menuType!=='seller'" class="search">
+        <input type="text" #searchInput (keyup)="searchProduct($event)" (blur)="hideSearch()" placeholder="search for medicine" />
+        <button (click)="submitSearch(searchInput.value)">search</button>
+        <ul class="suggested-result" *ngIf="searchResult">
+            <li *ngFor="let item of searchResult">
+                <a (mousedown)="redireccttodetails(item.id)" ><h5>{{item.name}}</h5></a>
+            </li>
+        </ul>
+    </div>
+
+    <div [ngSwitch]="menuType">
+       
+        
+        <img class="farmer" (click)="open(content)"  src="https://cdn-icons-png.flaticon.com/512/5684/5684426.png" alt="">
+        
+        <ng-template  #content let-offcanvas>
+            <div class="offcanvas-header">
+                <h4 class="offcanvas-title" id="offcanvas-basic-title"><a routerLink="/"><img class="farmmer" src="../../assets/Blue Red White Square Badge Simple Medical Clinic Logo.png" alt=""></a></h4>
+                <button type="button" class="btn-close" aria-label="Close" (click)="offcanvas.dismiss('Cross click')"></button>
+            </div>
+            <div class="offcanvas-body">
+                
+                <div class="text-end">
+                    <ul class="ul" *ngSwitchCase="'default'">
+                        <li><a class="like-button" routerLink="/"><img class="img" src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="">{{'home'|translate}}</a></li>
+                        <li><a class="like-button" routerLink="/store"><img class="img" src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="">{{'medical store'|translate}}</a></li>
+                        <li><a class="like-button" routerLink="/doctor"><img class="img" src="https://cdn-icons-png.flaticon.com/512/1021/1021799.png" alt="">{{'appoint Doctor'|translate}}</a></li>
+                        <li><a class="like-button" routerLink="/seller-auth"><img src="https://cdn-icons-png.flaticon.com/512/2544/2544333.png" class="img" alt="">{{'seller'|translate}}</a></li>
+                        <li><a class="like-button" routerLink="/user-auth"><img src="https://cdn-icons-png.flaticon.com/512/5599/5599504.png" class="img" alt="">{{'login'|translate}}</a></li>
+                        <li><a class="like-button" routerLink="/cart-page"><img class="img" src="https://cdn-icons-png.flaticon.com/512/263/263142.png" alt="">({{cartItems}})</a></li>
+                        <li><a class="like-button" routerLink="myorders"><img src="https://cdn-icons-png.flaticon.com/512/1051/1051590.png" class="img" alt="">{{'orderlist'|translate}}</a></li>
+                        <li><a class="like-button" routerLink="profile/userId"><img src="https://cdn-icons-png.flaticon.com/512/7605/7605078.png" class="img" alt="">{{'profile'|translate}}</a></li>
+                        <li><a class="like-button" (click)="userLogout()"><img src="https://cdn-icons-png.flaticon.com/512/3580/3580175.png" class="img" alt="">{{'logout'|translate}}</a></li>
+                    </ul>
+                    <ul class="ul" *ngSwitchCase="'seller'">
+                        <li><a class="like-button" routerLink="seller-add-product"><img class="img" src="https://static.thenounproject.com/png/3658249-200.png" alt="">add medicine</a></li>
+                        <li><a class="like-button" routerLink="/seller-home"><img class="img" src="https://static.thenounproject.com/png/3236333-200.png" alt="">medicine list</a></li>
+                        <li><a class="like-button" (click)="logout()"><img class="img" src="" alt=""><img src="https://cdn-icons-png.flaticon.com/512/3580/3580175.png" class="img" alt="">logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </ng-template>
+        
+        <!--ul *ngSwitchCase="'default'">
+            <li><a routerLink="/">home</a></li>
+            <li><a>{{userName|titlecase}}</a></li>
+            <li><a routerLink="myorders">my-orderlist</a></li>
+
+            <li><a (click)="userLogout()">logout</a></li>
+            <li><a routerLink="/cart-page">cart({{cartItems}})</a></li>
+        </ul-->
+        <ul *ngSwitchCase="'seller'">
+            <li><a routerLink="seller-add-product">add medicine</a></li>
+            <li><a routerLink="/seller-home">medicine list</a></li>
+            <li><a (click)="logout()">logout</a></li>
+            <li><a>{{sellerName| titlecase}}</a></li>
+        </ul>
+    </div>
+</nav>
+<ul class="navbar-nav ml-auto mb-5 mb-lg-0" style="width: 90vw; margin-left: 5vw;">
+    <li class="nav-item">
+        
+        <select class="form-select" (change)="ChangeLang($event)" name="" id="">
+            <option [selected]="lang==='en'" value="en">English</option>
+            <option [selected]="lang==='hi'" value="hi">hindi</option>
+            <option [selected]="lang==='mr'" value="mr">marathi</option>
+        </select>
+    </li>
+</ul>
+
+
+
+

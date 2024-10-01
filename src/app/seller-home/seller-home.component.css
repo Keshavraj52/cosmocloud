@@ -1,0 +1,32 @@
+h1{
+    color: rgb(95, 224, 20);
+    text-align: center;
+}
+table{
+    text-align: center;
+    color: rgb(8, 8, 8);
+    width: 98vw;
+}
+table td, table th{
+    border: 1px solid yellowgreen;
+    padding: 10px;
+    min-height: 160px;
+    font-size: 25px;
+}
+img{
+    width: 25vw;
+    height:50vh;
+    padding: 10px;
+}
+button{
+    width: 100px;
+    height: 30px;
+    background-color: rgba(228, 197, 20, 0.61);
+    color: rgb(243, 19, 64);
+    font-size: 20px;
+    border-radius: 5px;
+    border: 4px solid yellowgreen;
+}
+.adjust-update-link{
+    margin: 10px;
+}

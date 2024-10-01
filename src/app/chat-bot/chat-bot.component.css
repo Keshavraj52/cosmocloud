@@ -1,0 +1,56 @@
+.chat-container {
+    width: 80vw;
+    margin-left: 10vw;
+    margin: 50px auto;
+  }
+  
+  .chat-box {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+    width: 80vw;
+  }
+  
+  .chat-bu{
+    width: 10vw;
+  }
+  .chat-message {
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    animation: fadeIn 0.5s ease;
+  }
+  
+  .user {
+    background-color: #d3d3d3;
+  }
+  
+  .user-input {
+    margin-top: 10px;
+  }
+  
+  .user-input input {
+    width: 70vw;
+    padding: 5px;
+  }
+  
+  .user-input button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

@@ -1,0 +1,327 @@
+{
+  "seller": [
+    {
+      "name": "keshav",
+      "email": "kgp@gmail.com",
+      "password": "123456",
+      "id": "1"
+    },
+    {
+      "name": "prasad pore",
+      "email": "Poreg79@gmail.com ",
+      "password": "123kgp12",
+      "id": "10"
+    },
+    {
+      "name": "Keshavraj ganesh pore ",
+      "email": "keshavrajpore52@gmail.com",
+      "password": "keshavraj1234",
+      "id": "11"
+    },
+    {
+      "name": "prasad pore",
+      "email": "kgp453@gmail.com",
+      "password": "12345678",
+      "id": "12"
+    },
+    {
+      "id": "40b2",
+      "name": "Keshavraj ganesh pore ",
+      "email": "kgp4538@gmail.com",
+      "password": "12345678"
+    }
+  ],
+  "product": [
+    {
+      "id": "1",
+      "name": "Evion 400mg - Blister Pack of 10 Capsules",
+      "price": "15",
+      "color": "blue",
+      "category": "skin care",
+      "description": "Composition: Each soft gelatin capsule contains: Tocopheryl Acetate IP 400mg\nThis product will have minimum 3 months expiry at the time of order dispatch.\nDosage: As directed by the Physician\nColor: Tartrazine, Brilliant Blue FCF\nStorage Instructions: Store in a dry place at or below 25°C.\nManufactured / Marketed By : Merck Ltd\nKeep out of reach of children.",
+      "image": "https://m.media-amazon.com/images/I/61Tgv6gkjkL._SX679_.jpg",
+      "discount": "10",
+      "image2": "https://m.media-amazon.com/images/I/71yuTsun5yL._SX679_.jpg",
+      "additionaldiscount": "33"
+    },
+    {
+      "id": "2",
+      "name": "End2End Nutrition Natural Amla Extract Vitamin C with Zinc for Immunity, Skin Care",
+      "price": "1799",
+      "color": "orange",
+      "category": "skin care",
+      "description": "SKIN HEALTH – Vitamin C needs no introduction when it comes to Skin Health. As an Antioxidant, one of main function of Vitamin C is protecting and Nourishing the Skin. It helps you get Glowing Skin by slowing down Skin Aging, Preventing Sun Damage and Removing Dark Spots & Acne. Vitamin C stimulates your Body’s natural Collagen production. Healthy Collagen levels provide your Skin with a more Youthful appearance.\nBOOSTS IMMUNITY – Vitamin C is an essential Nutrient for the Growth and Repair of Tissue all over the Body. It helps to fight the free radicals in the body and it is also involved in various Biochemical processes related to Immune Health. Vitamin C, simply put it helps to build up your Immune System by stimulating the white blood cells, which fights off infections.",
+      "image": "https://m.media-amazon.com/images/I/61J4q-69NoL._SX679_PIbundle-3,TopRight,0,0_AA679SH20_.jpg",
+      "discount": "40",
+      "image2": "https://m.media-amazon.com/images/I/81ciiYULxGL._SX679_.jpg",
+      "additionaldiscount": "66"
+    },
+    {
+      "id": "3",
+      "name": "Alpha Follidense - Bottle of 60ml Hair Serum",
+      "price": "1232",
+      "color": "black",
+      "category": "hair care",
+      "description": "Composition: Caffiene+Biotin\nDosage: As directed by the Physician\nStorage Instructions: Store protected from moisture at a temperature not exceeding 30° C",
+      "image": "https://m.media-amazon.com/images/I/51+TtVSJmEL._SX679_.jpg",
+      "discount": "5",
+      "image2": "https://m.media-amazon.com/images/I/51q+qCtKkqL._SX679_.jpg",
+      "additionaldiscount": "20"
+    },
+    {
+      "id": "4",
+      "name": "Itone - Bottle of 10 ml Eye Drops",
+      "price": "62",
+      "color": "black",
+      "category": "eye care",
+      "description": "Composition : Each 10ml contains :-Aqueous distillate of (in mg) Nimba (A. indica) [Lf.,St.Bk.,FI.] BH 562.50 Sobhanjana (M. pterygosperma) [Lf.,St.Bk.] BH 562.50 Bhringaraj (E. alba) [PI.] BH 562.50 Punamava diffusa) [PI.] BH 562.50 Nirgundi (V. negundo) [Lf., St.] BH 562.50 Tulsi Patra (0. sanctum) [Lf., St.] BH 562.50 Satapatri (R. centifolia) [FI.] API 150.00 Yamani (C. copticum) [Fr.] API 69.50 Haritaki (T. chebula) [Fr.]\nAPI 46.25 Bibhitaka (r. belerica) [Fr.] API 46.25 Dhatriphala officinalis) [Fr.] API 46.25 Haridra (C. longa) [Rz.] API 92.50 Karpuram (Camphor)API 6.95 Pudina satwa (Menthol)API 1.85 Madhu (Honey)API 92.50 Ela (A. subulatum) [Fr.] BH 27.75 Swet Chandan (S. album) [Ht. Wd. ] API 69.50 Mukta (Pearl)AFI 0.93 Saindhava Laban (Rock salt) AFI 13.88 Preservatives : Phenylethyl A lcohol IP 0.05% v/v Benzalkonium Chloride Solution IP 0.02% v/v",
+      "image": "https://m.media-amazon.com/images/I/41KgwkOYU5L._SY445_SX342_QL70_FMwebp_.jpg",
+      "discount": "5",
+      "image2": "https://m.media-amazon.com/images/I/61a4HFTI4wL._SX679_.jpg",
+      "additionaldiscount": "10"
+    },
+    {
+      "id": "5",
+      "name": "Charak Dipya Syrup - Ayurvedic Digestive Care Syrup ",
+      "price": "205",
+      "color": "black/blue",
+      "category": "health care",
+      "description": "Reduces Acidity and Relieves Constipation: This product is formulated and can help alleviate acidity-related discomfort and can also provide relief from constipation, promoting a more comfortable digestive experience.\nDigestion of Heavy Foods: Sometimes, rich or heavy foods can be hard to digest. Complete Digestive Care contains ingredients that can assist your body in breaking down these foods, making digestion smoother and more efficient.\nEnhances Nutrient Absorption: Proper digestion is key to absorbing essential nutrients from the foods you consume. By supporting efficient digestion, this product can help your body to make the most of the nutrients available in your diet",
+      "image": "https://m.media-amazon.com/images/I/31XnQFAl4ML.jpg",
+      "discount": "5",
+      "image2": "https://m.media-amazon.com/images/I/61k6AIpi-PL._SX679_.jpg",
+      "additionaldiscount": "15"
+    },
+    {
+      "id": "6",
+      "name": "Electral - Pack of 21.80 g Oral Rehydration Powder",
+      "price": "20",
+      "color": "white",
+      "category": "power booster",
+      "description": "Composition: Each sachet (21.80 g) contains: Sodium Chloride IP 2.60 g, Potassium Chloride IP 1.50 g, Sodium Citrate IP 2.90 g, Dextrose Anhydrous IP 13.50 g, Excipients q.s;Dosage: Daily dose should be equivalent to patient's fluid requirements for maintance and replacement or losses.;Storage Instructions: Store protected from moisture.;Manufactured/Marketed By: Fdc Limited",
+      "image": "https://m.media-amazon.com/images/I/81jrDrIJoNL._SX679_.jpg",
+      "discount": "5",
+      "image2": "https://m.media-amazon.com/images/I/81vQs2hY3aL._SX679_.jpg",
+      "additionaldiscount": "15"
+    }
+  ],
+  "users": [
+    {
+      "id": "a6d8",
+      "name": "Fresho Banana - Yelakki, Organically Grown, 1 kg",
+      "email": "keshavrajpore52@gmail.com",
+      "password": "2345678"
+    },
+    {
+      "id": "d2bc",
+      "name": "Keshav ",
+      "email": "poreg79@gmail.com ",
+      "password": "12345678"
+    },
+    {
+      "id": "fedf",
+      "name": "jgg",
+      "email": "gjnv56@gmail.com",
+      "password": "12345678"
+    },
+    {
+      "id": "cdea",
+      "name": "Keshavraj ganesh pore ",
+      "email": "okporwgfpsin@gmail.com",
+      "password": "12345678"
+    },
+    {
+      "id": "66bd",
+      "name": "-",
+      "email": "avinashshinde12@gmail.com",
+      "password": "123456789"
+    }
+  ],
+  "cart": [
+    {
+      "id": "a594",
+      "name": "Itone - Bottle of 10 ml Eye Drops",
+      "price": "62",
+      "color": "black",
+      "category": "eye care",
+      "description": "Composition : Each 10ml contains :-Aqueous distillate of (in mg) Nimba (A. indica) [Lf.,St.Bk.,FI.] BH 562.50 Sobhanjana (M. pterygosperma) [Lf.,St.Bk.] BH 562.50 Bhringaraj (E. alba) [PI.] BH 562.50 Punamava diffusa) [PI.] BH 562.50 Nirgundi (V. negundo) [Lf., St.] BH 562.50 Tulsi Patra (0. sanctum) [Lf., St.] BH 562.50 Satapatri (R. centifolia) [FI.] API 150.00 Yamani (C. copticum) [Fr.] API 69.50 Haritaki (T. chebula) [Fr.]\nAPI 46.25 Bibhitaka (r. belerica) [Fr.] API 46.25 Dhatriphala officinalis) [Fr.] API 46.25 Haridra (C. longa) [Rz.] API 92.50 Karpuram (Camphor)API 6.95 Pudina satwa (Menthol)API 1.85 Madhu (Honey)API 92.50 Ela (A. subulatum) [Fr.] BH 27.75 Swet Chandan (S. album) [Ht. Wd. ] API 69.50 Mukta (Pearl)AFI 0.93 Saindhava Laban (Rock salt) AFI 13.88 Preservatives : Phenylethyl A lcohol IP 0.05% v/v Benzalkonium Chloride Solution IP 0.02% v/v",
+      "image": "https://m.media-amazon.com/images/I/41KgwkOYU5L._SY445_SX342_QL70_FMwebp_.jpg",
+      "discount": "5",
+      "image2": "https://m.media-amazon.com/images/I/61a4HFTI4wL._SX679_.jpg",
+      "additionaldiscount": "10",
+      "quantity": 1,
+      "userId": "a6d8",
+      "productId": "4"
+    },
+    {
+      "id": "0e1c",
+      "name": "End2End Nutrition Natural Amla Extract Vitamin C with Zinc for Immunity, Skin Care",
+      "price": "1799",
+      "color": "orange",
+      "category": "skin care",
+      "description": "SKIN HEALTH – Vitamin C needs no introduction when it comes to Skin Health. As an Antioxidant, one of main function of Vitamin C is protecting and Nourishing the Skin. It helps you get Glowing Skin by slowing down Skin Aging, Preventing Sun Damage and Removing Dark Spots & Acne. Vitamin C stimulates your Body’s natural Collagen production. Healthy Collagen levels provide your Skin with a more Youthful appearance.\nBOOSTS IMMUNITY – Vitamin C is an essential Nutrient for the Growth and Repair of Tissue all over the Body. It helps to fight the free radicals in the body and it is also involved in various Biochemical processes related to Immune Health. Vitamin C, simply put it helps to build up your Immune System by stimulating the white blood cells, which fights off infections.",
+      "image": "https://m.media-amazon.com/images/I/61J4q-69NoL._SX679_PIbundle-3,TopRight,0,0_AA679SH20_.jpg",
+      "discount": "40",
+      "image2": "https://m.media-amazon.com/images/I/81ciiYULxGL._SX679_.jpg",
+      "additionaldiscount": "66",
+      "quantity": 1,
+      "userId": "d2bc",
+      "productId": "2"
+    },
+    {
+      "id": "1019",
+      "name": "Evion 400mg - Blister Pack of 10 Capsules",
+      "price": "15",
+      "color": "blue",
+      "category": "skin care",
+      "description": "Composition: Each soft gelatin capsule contains: Tocopheryl Acetate IP 400mg\nThis product will have minimum 3 months expiry at the time of order dispatch.\nDosage: As directed by the Physician\nColor: Tartrazine, Brilliant Blue FCF\nStorage Instructions: Store in a dry place at or below 25°C.\nManufactured / Marketed By : Merck Ltd\nKeep out of reach of children.",
+      "image": "https://m.media-amazon.com/images/I/61Tgv6gkjkL._SX679_.jpg",
+      "discount": "10",
+      "image2": "https://m.media-amazon.com/images/I/71yuTsun5yL._SX679_.jpg",
+      "additionaldiscount": "33",
+      "quantity": 1,
+      "productId": "1",
+      "userId": null
+    }
+  ],
+  "orders": [
+    {
+      "id": "6508",
+      "email": "poreg79@gmail.com ",
+      "address": "At post mhaswad",
+      "mobileno": "7378564044",
+      "photo": "C:\\fakepath\\spiderman.jpg",
+      "totalPrice": 305,
+      "userId": "d2bc"
+    },
+    {
+      "id": "ae0b",
+      "email": "avinashshinde12@gmail.com",
+      "address": "mhaswad",
+      "mobileno": "07378564044",
+      "payID": "pay_P3jVhVkuu7RJHy",
+      "totalPrice": 5681,
+      "userId": "66bd"
+    }
+  ],
+  "skin": [],
+  "hair": [
+    {
+      "id": "1"
+    }
+  ],
+  "ear": [
+    {
+      "id": "1"
+    }
+  ],
+  "application": [
+    {
+      "fullName": "Keshavraj Pore",
+      "dob": "2003-05-04",
+      "gender": "male",
+      "address": "At post mhaswad\nNarshiha gali mhaswad",
+      "phone": "7378564044",
+      "email": "Poreg79@gmail.com",
+      "governmentID": "54541515415114",
+      "employerName": "keshavraj pore",
+      "employmentStatus": "part-time",
+      "proofOfIncome": "C:\\fakepath\\1726188-spider-man-marvel-desktop-wallpaper-man-wallpaper-4k.jpg",
+      "dependentName": "aids department",
+      "dependentDOB": "2003-05-04",
+      "preExistingConditions": "not serious injury",
+      "previousSurgeries": "no",
+      "currentMedications": "no",
+      "existingCoverage": "no",
+      "previousPolicyNumbers": "-",
+      "ifsccode": "mabh0000224",
+      "bankAccount": "15113513513513515135",
+      "branch": "mhaswad",
+      "income": "60000",
+      "id": "1"
+    }
+  ],
+  "skinapplication": [
+    {
+      "fullName": "Keshavraj pore",
+      "dob": "2003-05-05",
+      "gender": "male",
+      "age": "21",
+      "country": "India",
+      "address": "At post mhaswad\nNarshiha gali mhaswad",
+      "phone": "7378564044",
+      "email": "Poreg79@gmail.com",
+      "impact": "hand",
+      "preExistingConditions": "not any sirous issues",
+      "previousSurgeries": "no",
+      "currentMedications": "good",
+      "existingCoverage": "na",
+      "previousPolicyNumbers": "na",
+      "cancer": "no",
+      "bleeding": "no",
+      "id": "1"
+    }
+  ],
+  "earapplication": [
+    {
+      "fullName": "Keshavraj Pore",
+      "dob": "2003-05-04",
+      "gender": "male",
+      "age": "21",
+      "country": "India",
+      "address": "At post mhaswad\nNarshiha gali mhaswad",
+      "phone": "7378564044",
+      "email": "Poreg79@gmail.com",
+      "impact": "right ear",
+      "preExistingConditions": "na",
+      "previousSurgeries": "na",
+      "currentMedications": "na",
+      "existingCoverage": "na",
+      "previousPolicyNumbers": "na",
+      "cancer": "yes",
+      "bleeding": "yes",
+      "id": "1"
+    }
+  ],
+  "hairapplication": [
+    {
+      "fullName": "Keshavraj Pore",
+      "dob": "2024-04-10",
+      "gender": "male",
+      "age": "21",
+      "country": "India",
+      "address": "At post mhaswad\nNarshiha gali mhaswad",
+      "phone": "7378564044",
+      "email": "Poreg79@gmail.com",
+      "impact": "head hair",
+      "preExistingConditions": "na",
+      "previousSurgeries": "na",
+      "currentMedications": "na",
+      "existingCoverage": "na",
+      "previousPolicyNumbers": "na",
+      "cancer": "yes",
+      "bleeding": "yes",
+      "id": "1"
+    }
+  ],
+  "doctorappointment": [
+    {
+      "id": "9c03",
+      "name": "Keshavraj Pore",
+      "email": "keshavrajpore52@gmail.com",
+      "phone": "7378564044",
+      "address": "At post mhaswad",
+      "date": "2024-04-10",
+      "message": "neak pain"
+    },
+    {
+      "id": "e160",
+      "name": "omkar thakur",
+      "email": "omkardec2004@gmail.com",
+      "phone": "51645649849",
+      "address": "at post pune",
+      "date": "2024-04-11",
+      "message": "tired"
+    }
+  ]
+}

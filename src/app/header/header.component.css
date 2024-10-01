@@ -1,0 +1,131 @@
+.nav {
+    margin: 0;
+    padding-top: 0%;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(158, 11, 243);
+    width: 99vw;
+    height: 20vh;
+
+
+}
+
+
+.nav h1 a{
+    text-decoration: none;
+    color:  #6EBADF;
+}
+.nav ul {
+    display: inline-flex;
+    list-style-type: none;
+    margin: 0;
+    margin-left: 5%;
+    padding: 0;
+}
+
+.nav li {
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.nav li a {
+    text-decoration: none;
+    color:  #6EBADF;
+    cursor: pointer;
+}
+
+.nav .search {
+    margin-right: 5px;
+    margin-top: 45px;
+    margin-left: 0px;
+    flex: 1;
+    display: flex;
+    
+}
+.farmmer{
+    width: 200px;
+    height:22vh;
+    margin:0;
+    margin-top: 0;
+    margin-right: 40px;
+}
+.farmer{
+    width: 45px;
+    height: 10vh;
+    margin:0;
+    margin-left: 95px;
+    margin-right: 55px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.nav .search input {
+    flex: 1;
+    color:  #6EBADF;
+    border: 1px solid  #6EBADF;
+    height: 39px;
+    border-right: 0px;
+    padding-left: 70px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.nav .search button {
+    color:  #6EBADF;
+    border: 1px solid  #6EBADF;
+    height: 39px;
+    border-left: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.suggested-result{
+    position: absolute;
+    display: list-item !important;
+    z-index: 10;
+    background-color: #dddddda9;
+    width: 450px;
+    margin-left: 0px;
+    top: 62px;
+    border: 1px solid  #6EBADF;
+}
+.suggested-result li{
+    border: 1px solid #ffffff;
+    padding: 7px;
+}
+.suggested-result li a{
+    cursor: pointer;
+    color:  #6EBADF;
+
+}
+.like-button {
+    display: inline-block;
+    padding:  20px;
+    font-size: 16px;
+    width: 275px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color:  #6EBADF;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Change background color on hover */
+.like-button:hover {
+    background-color:  #6EBADF;
+}
+.ul {
+    text-decoration: none;
+    list-style-type: none;
+}
+.ul li{
+    padding: 25px;
+
+}
+.img{
+    height: 30px;
+    margin-right: 20px;
+}
+
+
+
