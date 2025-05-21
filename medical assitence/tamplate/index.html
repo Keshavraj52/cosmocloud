@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+    text-align: center;
+    color: #333;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+.result-container {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+.result-heading {
+    color: #007bff;
+}
+
+.result-section {
+    margin-bottom: 20px;
+}
+
+.result-section h3 {
+    color: #333;
+}
+
+.result-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.result-section ul li {
+    margin-bottom: 5px;
+}
+
+</style>
+<body>
+        <div class="container">
+        <h1 class="heading">Disease Predictor</h1>
+        <form action="/predict" method="post" onsubmit="return validateForm()">
+            <label for="symptoms">Enter Symptoms (comma-separated): </label><br>
+            <input type="text" id="symptoms" name="symptoms" class="input-field"><br><br>
+            <input type="submit" value="Predict" class="submit-btn">
+        </form>
+
+        {% if predicted_disease %}
+        <div class="result-container">
+            <h2 class="result-heading">Predicted Disease: {{ predicted_disease }}</h2>
+            <div class="result-section">
+                <h3>Description:</h3>
+                <p>{{ dis_des }}</p>
+            </div>
+
+            <div class="result-section">
+                <h3>Precautions:</h3>
+                <ul>
+                    {% for precaution in dis_pre %}
+                    <li>{{ precaution }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <div class="result-section">
+                <h3>Medications:</h3>
+                <ul>
+                    {% for medication in dis_med %}
+                    <li>{{ medication }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <div class="result-section">
+                <h3>Workout Recommendation:</h3>
+                <p>{{ dis_wrkout }}</p>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+
+
+</body>
+    <script>
+        function validateForm() {
+            var symptomsInput = document.getElementById("symptoms").value.trim();
+            if (symptomsInput === "") {
+                alert("Please enter symptoms.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</html>
+
+
